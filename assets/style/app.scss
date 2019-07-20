@@ -1,3 +1,19 @@
+$family-mono: 'Share Tech Mono', monospace;
+$family-serif: 'Playfair Display', serif;
+
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-display: 'swap';
+  src: url('/fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-display: 'swap';
+  src: url('/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  src: url('/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
 .bra {
   &-5 {
     border-radius: 5px;
@@ -12,4 +28,22 @@
   &-10 {
     margin-top: 10px;
   }
+}
+
+.mb {
+  &-5 {
+    margin-bottom: 5px;
+  }
+
+  &-10 {
+    margin-bottom: 10px;
+  }
+}
+
+.hero {
+  font-family: $family-serif;
+}
+
+.tag {
+  font-family: $family-mono;
 }
