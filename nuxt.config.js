@@ -15,7 +15,7 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     htmlAttrs: {
-      class: 'has-background-dark	'
+      class: 'has-background-grey-lighter	'
     }
   },
 
@@ -49,6 +49,7 @@ module.exports = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://swapi.co/api/'
   },
 
   /*
