@@ -29,6 +29,48 @@ export default {
     return {
       categories: SWAPI.CATEGORIES
     }
+  },
+  head() {
+    return {
+      title: 'SWAPI - Nuxt.js',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'The Star Wars API with Nuxt.js'
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: 'SWAPI - Nuxt.js'
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: 'The Star Wars API with Nuxt.js'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'SWAPI - Nuxt.js'
+        },
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          content: 'https://swapi.andriannus.id/'
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: 'The Star Wars API with Nuxt.js'
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'SWAPI - Nuxt.js'
+        }
+      ]
+    }
   }
 }
 </script>
