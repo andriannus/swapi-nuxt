@@ -5,9 +5,7 @@
     </h2>
 
     <div class="notification">
-      <progress v-if="isLoading" class="progress is-small is-dark" max="100">
-        15%
-      </progress>
+      <HomeSectionLoader v-if="isLoading"></HomeSectionLoader>
 
       <div v-else class="tags are-medium">
         <span
@@ -23,7 +21,13 @@
 </template>
 
 <script>
+import HomeSectionLoader from '~/components/HomeSectionLoader.vue'
+
 export default {
+  components: {
+    HomeSectionLoader
+  },
+
   props: {
     category: {
       default: '',
