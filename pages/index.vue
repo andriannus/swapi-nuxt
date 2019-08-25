@@ -57,7 +57,7 @@ export default {
         {
           hid: 'og:url',
           name: 'og:url',
-          content: 'https://swapi.andriannus.id/'
+          content: 'https://swapi-nuxt.andriannus.id/'
         },
         {
           hid: 'twitter:description',
