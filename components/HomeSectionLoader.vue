@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ContentLoader :height="23" class="is-hidden-mobile" primaryColor="#4a4a4a">
+    <ContentLoader
+      :height="23"
+      class="is-hidden-mobile"
+      primary-color="#4a4a4a"
+    >
       <rect x="0" y="0" rx="1.5" ry="1.5" width="50" height="10" />
       <rect x="55" y="0" rx="1.5" ry="1.5" width="75" height="10" />
       <rect x="135" y="0" rx="1.5" ry="1.5" width="65" height="10" />
@@ -14,7 +18,7 @@
     <ContentLoader
       :height="180"
       class="is-hidden-desktop"
-      primaryColor="#4a4a4a"
+      primary-color="#4a4a4a"
     >
       <rect x="0" y="0" rx="9" ry="9" width="300" height="50" />
       <rect x="0" y="60" rx="9" ry="9" width="400" height="50" />

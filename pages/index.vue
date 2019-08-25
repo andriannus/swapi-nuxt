@@ -25,11 +25,13 @@ export default {
   components: {
     HomeSection
   },
+
   data() {
     return {
       categories: SWAPI.CATEGORIES
     }
   },
+
   head() {
     return {
       title: 'SWAPI - Nuxt.js',
