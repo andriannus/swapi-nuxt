@@ -1,8 +1,26 @@
 <template>
   <div class="mt-10">
-    <h2 class="is-capitalized is-size-4 mb-5">
-      {{ category }}
-    </h2>
+    <div class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <h2 class="is-capitalized is-size-4">
+            {{ category }}
+          </h2>
+        </div>
+      </div>
+
+      <div class="level-right">
+        <div class="level-item">
+          <a class="button is-outlined is-dark">
+            <span>Load more</span>
+
+            <span class="icon">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <div class="notification">
       <HomeSectionLoader v-if="isLoading"></HomeSectionLoader>
@@ -19,6 +37,12 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.level {
+  margin-bottom: 10px;
+}
+</style>
 
 <script>
 import HomeSectionLoader from '~/components/HomeSectionLoader.vue'
