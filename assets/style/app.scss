@@ -1,5 +1,7 @@
-$family-mono: 'Share Tech Mono', monospace;
 $family-serif: 'Playfair Display', serif;
+
+$family-monospace: 'Share Tech Mono', monospace;
+$family-secondary: $family-serif;
 
 @font-face {
   font-family: 'Share Tech Mono';
@@ -40,10 +42,4 @@ $family-serif: 'Playfair Display', serif;
   }
 }
 
-.hero {
-  font-family: $family-serif;
-}
-
-.tag {
-  font-family: $family-mono;
-}
+@import '~bulma/bulma.sass';

@@ -13,7 +13,7 @@
         <span
           v-for="(resource, index) in resources"
           :key="index"
-          class="tag is-dark"
+          class="tag is-dark is-family-monospace"
         >
           {{ resource.name || resource.title }}
         </span>

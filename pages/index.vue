@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <section class="bra-5 has-text-centered hero is-dark">
+    <section class="bra-5 has-text-centered hero is-family-secondary is-dark">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">SWAPI - Nuxt.js</h1>
