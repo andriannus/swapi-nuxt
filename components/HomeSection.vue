@@ -11,13 +11,13 @@
 
       <div class="level-right">
         <div class="level-item">
-          <a class="button is-outlined is-dark">
+          <nuxt-link class="button is-outlined is-dark" :to="`/${category}`">
             <span>Load more</span>
 
             <span class="icon">
               <i class="fas fa-arrow-right"></i>
             </span>
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
