@@ -1,13 +1,6 @@
 <template>
   <div class="container">
-    <section class="bra-5 has-text-centered hero is-family-secondary is-dark">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">SWAPI - Nuxt.js</h1>
-          <h2 class="subtitle">The Star Wars API with Nuxt.js</h2>
-        </div>
-      </div>
-    </section>
+    <AppBanner :title="title" :subtitle="subtitle"></AppBanner>
 
     <HomeSection
       v-for="(category, index) in categories"
@@ -18,17 +11,21 @@
 </template>
 
 <script>
+import AppBanner from '~/components/AppBanner.vue'
 import HomeSection from '~/components/HomeSection.vue'
-import { SWAPI } from '~/assets/const/swapi'
+import { CATEGORIES } from '~/assets/const/swapi'
 
 export default {
   components: {
+    AppBanner,
     HomeSection
   },
 
   data() {
     return {
-      categories: SWAPI.CATEGORIES
+      categories: CATEGORIES,
+      subtitle: 'The Star Wars API with Nuxt.js',
+      title: 'SWAPI - Nuxt.js'
     }
   },
 
